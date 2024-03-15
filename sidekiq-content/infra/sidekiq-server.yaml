@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sidekiq-server
+  annotations:
+#Important Note:  Need to add health check path annotations in service level if we are planning to use multiple targets in a load balancer  
+   # alb.ingress.kubernetes.io/healthcheck-path: /healthcheck
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: sidekiq-server
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sidekiq-server
+  labels:
+    app: sidekiq-server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sidekiq-server
+  template:
+    metadata:
+      labels:
+        app: sidekiq-server
+    spec:
+      containers:
+        - name: sidekiq-server
+          image: registry.gitlab.com/rockstarsystems/sidekiq-server:dev
+          #args:
+           # - "main.go"
+           # - "serve"
+           # - "--verbose"
+           # - "--config"
+           # - "/etc/sidekiq/default.yaml"
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: config
+              mountPath: "/etc/sidekiq"
+              readOnly: true
+            - name: persistent-file-storage
+              mountPath: /var/sidekiq/data
+      imagePullSecrets:
+        - name: regcred
+      volumes:
+        # You set volumes at the Pod level, then mount them into containers inside that Pod
+        - name: config
+          configMap:
+            # Provide the name of the ConfigMap you want to mount.
+            name: sidekiq-server
+            # An array of keys from the ConfigMap to create as files
+            items:
+              - key: "sidekiq.server"
+                path: "default.yaml"
+        - name: persistent-file-storage
+          nfs:
+            server: fs-07d47fe41941dc5ca.efs.us-east-1.amazonaws.com
+            path: /

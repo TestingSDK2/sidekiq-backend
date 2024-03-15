@@ -1,0 +1,8 @@
+{
+    "websiteName": "Sidekiq",
+    "websitePushID": "web.com.sidekiq.app",
+    "allowedDomains": ["https://app.sidekiq.com"],
+    "urlFormatString": "https://app.sidekiq.com/%@/%@",
+    "authenticationToken": "{{.AuthenticationToken}}",
+    "webServiceURL": "https://app.sidekiq.com/api/apns"
+}

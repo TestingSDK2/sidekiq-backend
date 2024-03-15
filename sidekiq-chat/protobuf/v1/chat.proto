@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package chat.v1;  // Package name includes version information
+
+option go_package = "/sidekiq-chat/v1";
+
+message MessageRequest {
+  string text = 1;
+}
+
+message MessageResponse {
+  string status = 1;
+}
+
+service ChatService {
+  rpc SendMessage (MessageRequest) returns (MessageResponse);
+}

@@ -1,0 +1,377 @@
+basePath: /
+definitions:
+  controller.AddMemberReq:
+    properties:
+      boardId:
+        type: string
+      groupId:
+        type: string
+      memberId:
+        type: integer
+      operation:
+        type: string
+      role:
+        type: string
+    type: object
+  controller.AddMemberRes:
+    type: object
+  controller.ArcheiveGroupRes:
+    type: object
+  controller.ArchiveGroupReq:
+    properties:
+      archive:
+        type: boolean
+    type: object
+  controller.CreateGroupReq:
+    properties:
+      boardId:
+        type: string
+      isGroup:
+        type: boolean
+      members:
+        items:
+          $ref: '#/definitions/domain.GroupMember'
+        type: array
+      name:
+        example: managers
+        type: string
+    type: object
+  controller.CreateGroupRes:
+    properties:
+      error: {}
+      group:
+        $ref: '#/definitions/domain.Group'
+    type: object
+  controller.DeleteGroup:
+    type: object
+  controller.DeleteMessageRes:
+    type: object
+  controller.GetGroupsRes:
+    properties:
+      groups:
+        items:
+          $ref: '#/definitions/domain.Group'
+        type: array
+    type: object
+  controller.SendMessageReq:
+    properties:
+      message:
+        type: string
+    type: object
+  controller.SendMessageRes:
+    properties:
+      message:
+        $ref: '#/definitions/domain.Message'
+    type: object
+  controller.UpdateReadCounterRes:
+    type: object
+  domain.Group:
+    properties:
+      boardId:
+        type: string
+      createdAt:
+        type: string
+      formerMembers:
+        items:
+          $ref: '#/definitions/domain.GroupMember'
+        type: array
+      id:
+        type: string
+      isArchive:
+        type: boolean
+      isDeleted:
+        type: boolean
+      isGroup:
+        type: boolean
+      members:
+        items:
+          $ref: '#/definitions/domain.GroupMember'
+        type: array
+      name:
+        type: string
+      owner:
+        type: integer
+      slug:
+        type: string
+      updatedAt:
+        type: string
+    required:
+    - slug
+    type: object
+  domain.GroupMember:
+    properties:
+      joinedOn:
+        type: string
+      memberId:
+        type: integer
+      role:
+        type: string
+    type: object
+  domain.Message:
+    properties:
+      attachment:
+        type: string
+      createdAt:
+        type: string
+      groupId:
+        type: string
+      id:
+        type: string
+      isDeleted:
+        type: boolean
+      message:
+        type: string
+      reactions:
+        items:
+          $ref: '#/definitions/domain.Reaction'
+        type: array
+      senderId:
+        type: integer
+      updatedAt:
+        type: string
+    type: object
+  domain.Reaction:
+    properties:
+      reactionType:
+        type: string
+      userId:
+        type: integer
+    type: object
+host: localhost:5001
+info:
+  contact:
+    email: amardeep.singh@bacancy.com
+    name: API Support
+  description: This is a chat service which facilitates users to manage groups within
+    board, store messages.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: SidekIQ Chat Service
+  version: "1.0"
+paths:
+  /group/:boardId/list:
+    get:
+      consumes:
+      - application/json
+      description: This api get all group info within board with members available
+        in group
+      parameters:
+      - description: Description of the request body
+        in: path
+        name: boardId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.GetGroupsRes'
+      summary: Get group info present in board
+      tags:
+      - group
+  /group/:groupId:
+    get:
+      consumes:
+      - application/json
+      description: This api creates a group within board with members available in
+        group
+      parameters:
+      - description: Description of the request body
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.ArchiveGroupReq'
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      summary: Get group info
+      tags:
+      - group
+  /group/{groupId}:
+    delete:
+      consumes:
+      - application/json
+      description: This API deletes the group within the board.
+      parameters:
+      - description: Group ID to be removed
+        in: path
+        name: groupId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Returns the response indicating success
+          schema:
+            $ref: '#/definitions/controller.DeleteGroup'
+      summary: Delete group within board
+      tags:
+      - group
+  /group/archive:
+    post:
+      consumes:
+      - application/json
+      description: This API archive the group within the board.
+      parameters:
+      - description: Group ID to be archive
+        in: path
+        name: groupId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Returns the response indicating success
+          schema:
+            $ref: '#/definitions/controller.ArcheiveGroupRes'
+      summary: archive group within board
+      tags:
+      - group
+  /group/create:
+    post:
+      consumes:
+      - application/json
+      description: This api creates a group within board with members available in
+        group
+      parameters:
+      - description: Description of the request body
+        in: body
+        name: requestBody
+        required: true
+        schema:
+          $ref: '#/definitions/controller.CreateGroupReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.CreateGroupRes'
+      summary: Create a group within a board
+      tags:
+      - group
+  /group/update-member/{groupId}:
+    post:
+      consumes:
+      - application/json
+      description: This api add members, remove or updates roles of member within
+        group
+      parameters:
+      - description: Group ID to be updated
+        in: path
+        name: groupId
+        required: true
+        type: string
+      - description: Description of the request body
+        in: body
+        name: requestBody
+        required: true
+        schema:
+          $ref: '#/definitions/controller.AddMemberReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.AddMemberRes'
+      summary: Uodate members within group of a board.
+      tags:
+      - group
+  /message/{groupId}:
+    patch:
+      consumes:
+      - application/json
+      description: This api marks the last seen message read.
+      parameters:
+      - description: Group ID of the chat
+        in: path
+        name: groupId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.UpdateReadCounterRes'
+      summary: This api marks the last seen message read.
+      tags:
+      - message
+  /message/{groupId}/{messageId}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a message withuin group
+      parameters:
+      - description: Group ID of the message
+        in: path
+        name: groupId
+        required: true
+        type: string
+      - description: Message ID of the message to be removed
+        in: path
+        name: messageId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.DeleteMessageRes'
+      summary: Delete a message within group
+      tags:
+      - message
+  /message/send/{groupId}:
+    post:
+      consumes:
+      - application/json
+      description: This api sends message in group
+      parameters:
+      - description: Group ID to be removed
+        in: path
+        name: groupId
+        required: true
+        type: string
+      - description: Description of the request body
+        in: body
+        name: requestBody
+        required: true
+        schema:
+          $ref: '#/definitions/controller.SendMessageReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.SendMessageRes'
+      summary: Send a message in group
+      tags:
+      - message
+swagger: "2.0"

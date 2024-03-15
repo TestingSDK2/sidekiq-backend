@@ -1,0 +1,11 @@
+sidekiq-auth-server/default.yaml
+sidekiq-auth-server/storage/logs/*
+sidekiq-notification/default.yaml
+sidekiq-notification/storage/logs/*
+sidekiq-people/default.yaml
+sidekiq-realtime/.env
+
+sidekiq-people/storage/logs/*
+sidekiq-content/default.yaml
+sidekiq-realtime/node_modules
+sidekiq-realtime/.env

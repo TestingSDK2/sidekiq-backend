@@ -1,0 +1,30 @@
+{
+  "website.json": {
+    "hashType": "sha512",
+    "hashValue": "{{.WebsiteHash}}"
+  },
+  "icon.iconset/icon_16x16.png": {
+    "hashType": "sha512",
+    "hashValue": "717ca772b819e974f534e328bc4c8e9767931911633c7966340a502d57a3c2917d73ee87a7b779bb757c0478e8751cc71c52d3dd7693570bed03ca2ef015f407"
+  },
+  "icon.iconset/icon_16x16@2x.png": {
+    "hashType": "sha512",
+    "hashValue": "a7c76181da7a5ca6afdb95e43a23af114b4ca45dd7ced018856df80c9343c4768322b664b2beef9adb25cf14971535fb85fd26fb9f10745425f9a7c1ebbab376"
+  },
+  "icon.iconset/icon_32x32.png": {
+    "hashType": "sha512",
+    "hashValue": "a7c76181da7a5ca6afdb95e43a23af114b4ca45dd7ced018856df80c9343c4768322b664b2beef9adb25cf14971535fb85fd26fb9f10745425f9a7c1ebbab376"
+  },
+  "icon.iconset/icon_32x32@2x.png": {
+    "hashType": "sha512",
+    "hashValue": "0eb974e18a319984daa0a658612adbceb1c17fa17277eb1a0effe7481fcd5739284b4755ba1b656a31e5af877fe5741ecb6afd20258107277049bcb0450b2051"
+  },
+  "icon.iconset/icon_128x128.png": {
+    "hashType": "sha512",
+    "hashValue": "d5cade129b10d546728ec423e17c7756780f5ddce10a45cce056e4408c4e3f3dbd34b4869b620627d7febe0e17922fa5d10f208cd6873de1350d96c15d286c3e"
+  },
+  "icon.iconset/icon_128x128@2x.png": {
+    "hashType": "sha512",
+    "hashValue": "2554bfe088f4f427c37ddc4e65d42dbe8fc093f700f649d40d491f8a2ecb16bdb1bf036b5397e57682d5abb0b43eaa972c0244058a73a63c3d4127c3d5fff648"
+  }
+}

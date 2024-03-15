@@ -1,0 +1,69 @@
+info:
+  contact: {}
+paths:
+  /autocomplete:
+    get:
+      description: Returns 'google-like' autocomplete results when the user types
+        in the search box
+      parameters:
+      - description: Search query
+        in: query
+        name: search
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: Autocomplete
+  /fulltextsearch:
+    get:
+      description: Performs a full-text search on the dashboard
+      parameters:
+      - description: Search query
+        in: query
+        name: search
+        required: true
+        type: string
+      - description: Page number
+        in: query
+        name: page
+        type: integer
+      - description: Results limit per page
+        in: query
+        name: limit
+        type: integer
+      - description: Field to sort by
+        in: query
+        name: sortBy
+        type: string
+      - description: Sorting order (asc/desc)
+        in: query
+        name: orderBy
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: Full Text Search
+  /searchhistory:
+    get:
+      description: Retrieves the search history of the dashboard
+      produces:
+      - application/json
+      responses: {}
+      summary: Get Dashboard Search History
+    post:
+      consumes:
+      - application/json
+      description: Updates the search history of the dashboard
+      parameters:
+      - description: Search query
+        in: body
+        name: search
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: Update Dashboard Search History
+swagger: "2.0"

@@ -1,0 +1,566 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a chat service which facilitates users to manage groups within board, store messages.",
+        "title": "SidekIQ Chat Service",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "API Support",
+            "email": "amardeep.singh@bacancy.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:5001",
+    "basePath": "/",
+    "paths": {
+        "/group/:boardId/list": {
+            "get": {
+                "description": "This api get all group info within board with members available in group",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "group"
+                ],
+                "summary": "Get group info present in board",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Description of the request body",
+                        "name": "boardId",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.GetGroupsRes"
+                        }
+                    }
+                }
+            }
+        },
+        "/group/:groupId": {
+            "get": {
+                "description": "This api creates a group within board with members available in group",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "group"
+                ],
+                "summary": "Get group info",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Description of the request body",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.ArchiveGroupReq"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/group/archive": {
+            "post": {
+                "description": "This API archive the group within the board.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "group"
+                ],
+                "summary": "archive group within board",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group ID to be archive",
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the response indicating success",
+                        "schema": {
+                            "$ref": "#/definitions/controller.ArcheiveGroupRes"
+                        }
+                    }
+                }
+            }
+        },
+        "/group/create": {
+            "post": {
+                "description": "This api creates a group within board with members available in group",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "group"
+                ],
+                "summary": "Create a group within a board",
+                "parameters": [
+                    {
+                        "description": "Description of the request body",
+                        "name": "requestBody",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/controller.CreateGroupReq"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.CreateGroupRes"
+                        }
+                    }
+                }
+            }
+        },
+        "/group/update-member/{groupId}": {
+            "post": {
+                "description": "This api add members, remove or updates roles of member within group",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "group"
+                ],
+                "summary": "Uodate members within group of a board.",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group ID to be updated",
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Description of the request body",
+                        "name": "requestBody",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/controller.AddMemberReq"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.AddMemberRes"
+                        }
+                    }
+                }
+            }
+        },
+        "/group/{groupId}": {
+            "delete": {
+                "description": "This API deletes the group within the board.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "group"
+                ],
+                "summary": "Delete group within board",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group ID to be removed",
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the response indicating success",
+                        "schema": {
+                            "$ref": "#/definitions/controller.DeleteGroup"
+                        }
+                    }
+                }
+            }
+        },
+        "/message/send/{groupId}": {
+            "post": {
+                "description": "This api sends message in group",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "message"
+                ],
+                "summary": "Send a message in group",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group ID to be removed",
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Description of the request body",
+                        "name": "requestBody",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/controller.SendMessageReq"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.SendMessageRes"
+                        }
+                    }
+                }
+            }
+        },
+        "/message/{groupId}": {
+            "patch": {
+                "description": "This api marks the last seen message read.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "message"
+                ],
+                "summary": "This api marks the last seen message read.",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group ID of the chat",
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.UpdateReadCounterRes"
+                        }
+                    }
+                }
+            }
+        },
+        "/message/{groupId}/{messageId}": {
+            "delete": {
+                "description": "Delete a message withuin group",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "message"
+                ],
+                "summary": "Delete a message within group",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group ID of the message",
+                        "name": "groupId",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Message ID of the message to be removed",
+                        "name": "messageId",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.DeleteMessageRes"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.AddMemberReq": {
+            "type": "object",
+            "properties": {
+                "boardId": {
+                    "type": "string"
+                },
+                "groupId": {
+                    "type": "string"
+                },
+                "memberId": {
+                    "type": "integer"
+                },
+                "operation": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "string"
+                }
+            }
+        },
+        "controller.AddMemberRes": {
+            "type": "object"
+        },
+        "controller.ArcheiveGroupRes": {
+            "type": "object"
+        },
+        "controller.ArchiveGroupReq": {
+            "type": "object",
+            "properties": {
+                "archive": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "controller.CreateGroupReq": {
+            "type": "object",
+            "properties": {
+                "boardId": {
+                    "type": "string"
+                },
+                "isGroup": {
+                    "type": "boolean"
+                },
+                "members": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/domain.GroupMember"
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "example": "managers"
+                }
+            }
+        },
+        "controller.CreateGroupRes": {
+            "type": "object",
+            "properties": {
+                "error": {},
+                "group": {
+                    "$ref": "#/definitions/domain.Group"
+                }
+            }
+        },
+        "controller.DeleteGroup": {
+            "type": "object"
+        },
+        "controller.DeleteMessageRes": {
+            "type": "object"
+        },
+        "controller.GetGroupsRes": {
+            "type": "object",
+            "properties": {
+                "groups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/domain.Group"
+                    }
+                }
+            }
+        },
+        "controller.SendMessageReq": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "controller.SendMessageRes": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "$ref": "#/definitions/domain.Message"
+                }
+            }
+        },
+        "controller.UpdateReadCounterRes": {
+            "type": "object"
+        },
+        "domain.Group": {
+            "type": "object",
+            "required": [
+                "slug"
+            ],
+            "properties": {
+                "boardId": {
+                    "type": "string"
+                },
+                "createdAt": {
+                    "type": "string"
+                },
+                "formerMembers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/domain.GroupMember"
+                    }
+                },
+                "id": {
+                    "type": "string"
+                },
+                "isArchive": {
+                    "type": "boolean"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "isGroup": {
+                    "type": "boolean"
+                },
+                "members": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/domain.GroupMember"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "owner": {
+                    "type": "integer"
+                },
+                "slug": {
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "type": "string"
+                }
+            }
+        },
+        "domain.GroupMember": {
+            "type": "object",
+            "properties": {
+                "joinedOn": {
+                    "type": "string"
+                },
+                "memberId": {
+                    "type": "integer"
+                },
+                "role": {
+                    "type": "string"
+                }
+            }
+        },
+        "domain.Message": {
+            "type": "object",
+            "properties": {
+                "attachment": {
+                    "type": "string"
+                },
+                "createdAt": {
+                    "type": "string"
+                },
+                "groupId": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "reactions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/domain.Reaction"
+                    }
+                },
+                "senderId": {
+                    "type": "integer"
+                },
+                "updatedAt": {
+                    "type": "string"
+                }
+            }
+        },
+        "domain.Reaction": {
+            "type": "object",
+            "properties": {
+                "reactionType": {
+                    "type": "string"
+                },
+                "userId": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

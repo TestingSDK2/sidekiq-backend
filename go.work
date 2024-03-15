@@ -1,0 +1,12 @@
+go 1.22
+
+use (
+	sidekiq-auth-server
+	sidekiq-chat
+	sidekiq-content
+	sidekiq-notification
+	sidekiq-people
+	sidekiq-proto
+	sidekiq-search
+	sidekiq-models
+)

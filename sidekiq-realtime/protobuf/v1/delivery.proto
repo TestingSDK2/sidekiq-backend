@@ -1,0 +1,80 @@
+syntax = "proto3";
+
+option go_package = "/sidekiq-realtime/v1";
+
+// Define the gRPC service for message delivery
+service DeliveryService {
+    // Method to deliver a notification
+    rpc DeliverNotification(NotificationRequest) returns (DeliveryResponse) {}
+    // Method to deliver message
+    rpc DeliverMessage(MessageRequest) returns (DeliveryResponse) {}
+
+}
+
+// Request message for delivering a notification
+message NotificationRequest {
+    // Unique ID of the notification
+    string notificationId = 1;
+    // Member Id of profile
+    string recipientMemberId = 3;
+    // ID of the recipient profile
+    string recipientProfileId = 4;
+    // ID of the sender profile
+    string senderProfileId = 5;
+    // Type of the thing
+    string thingType = 6;
+    // ID of the thing
+    string thingId = 7;
+    // Whether the notification is read
+    bool isRead = 8;
+    // Type of action
+    string actionType = 9;
+    // Text of the notification
+    string notificationText = 10;
+    // Profile IDs of receipt members
+    repeated string receiptProfileIds = 11;
+}
+
+// Enum for message status
+enum MessageStatus {
+    DELETED = 0;
+    SENT = 1;
+}
+
+
+// Request message for delivering a message
+message MessageRequest {
+    // Unique ID of the message
+    string messageId = 1;
+    // ID of the group
+    string groupId = 2;
+    // ID of the sender
+    string senderId = 3;
+    // Content of the message
+    string message = 4;
+    // Attachment (if any)
+    string attachment = 5;
+    // Reactions (if any)
+    repeated string reactions = 6;
+    // Whether the message is deleted
+    bool isDeleted = 7;
+    // Status of the message
+    MessageStatus status = 8;
+    // Profile IDs of receipt members
+    repeated string receiptProfileIds = 9;
+    // action on message
+    string actionName = 10;
+}
+
+// Enum for acknowledgment status
+enum AcknowledgmentStatus {
+    DELIVERED = 0;
+    UNABLE_TO_DELIVER = 1;
+    CLIENT_NOT_ONLINE = 2;
+}
+
+// Response message to be sent by the server
+message DeliveryResponse {
+    // Acknowledgment status
+    AcknowledgmentStatus acknowledgment = 1;
+}

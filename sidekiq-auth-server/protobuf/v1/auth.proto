@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package auth.v1;
+
+option go_package = "/sidekiq-auth-server/v1";
+
+message Account {
+  int32 id = 1;
+  int32 account_type = 2;
+  string user_name = 3;
+  string first_name = 4;
+  string last_name = 5;
+  string email = 6;
+  string recovery_email = 7;
+}
+
+message ValidateUserRequest {
+  string token = 1;
+  int32 profileID = 2;
+  bool isProfileValidate = 3;
+}
+
+message ValidateUserReply {
+  Account data  = 1;
+  int32 status = 2;
+  string message = 3;
+}
+
+message CreateJWTTokenRequest {
+  int32 accountID = 1;
+}
+
+message CreateJWTTokenReply {
+  string token = 1;
+  int32 status = 2;
+}
+
+service AuthService {
+    rpc ValidateUser(ValidateUserRequest) returns (ValidateUserReply) {}
+    rpc CreateJWTToken(CreateJWTTokenRequest) returns (CreateJWTTokenReply) {}
+}

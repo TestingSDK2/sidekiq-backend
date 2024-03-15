@@ -1,0 +1,442 @@
+syntax = "proto3";
+
+package content.v1;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/any.proto";
+
+option go_package = "../sidekiq-proto/sidekiq-content/v1";
+
+message HandleBoardInvitation {
+    string boardID = 1;
+    string type = 2;
+}
+
+message ConciseProfile {
+  int32 id = 1;
+  int32 userID = 2;
+  string firstName = 3;
+  string lastName = 4;
+  string photo = 5;
+  string screenName = 6;
+  string userName = 7;
+  string email = 8;
+  string phone = 9;
+  string type = 10;
+  bool shareable = 11;
+  string defaultThingsBoard = 12;
+  Thumbnails thumbs = 13;
+}
+
+message Thumbnails {
+  string small = 1 [json_name = "small"];
+  string medium = 2 [json_name = "medium"];
+  string large = 3 [json_name = "large"];
+  string icon = 4 [json_name = "icon"];
+  string original = 5 [json_name = "original"];
+}
+
+message Comment {
+  string _id = 1;
+  int32 profileID = 2;
+  string message = 3;
+  google.protobuf.Timestamp createDate = 4;
+  google.protobuf.Timestamp lastModifiedDate = 5;
+  string addedTime = 6;
+  string editTime = 7;
+}
+
+message Board {
+  // Basic fields
+  string _id = 1;
+  string owner = 2;
+  string state = 3;
+  string visible = 4;
+  bool shareable = 5;
+  string searchable = 6;
+  bool bookmark = 7;
+  string bookmarkID = 8;
+  bool isBookmarked = 9;
+  bool reactions = 10;
+  int32 viewCount = 11;
+  ConciseProfile ownerInfo = 12;
+  repeated ConciseProfile taggedPeople = 13;
+  string postScheduleDate = 14;
+  string postScheduleTime = 15;
+  string parentID = 16;
+  string coverImage = 17;
+  string password = 18;
+  bool chat = 19;
+  bool isComments = 20;
+  string title = 21;
+  string type = 22;
+  string description = 23;
+  repeated string tags = 24;
+  repeated string allThingsTags = 25;
+  repeated string admins = 26;
+  repeated string authors = 27;
+  repeated string viewers = 28;
+  repeated string subscribers = 29;
+  repeated string followers = 30;
+  repeated string guests = 31;
+  repeated string blocked = 32;
+  int32 sequence = 33;
+  repeated Comment comments = 34;
+  google.protobuf.Timestamp createDate = 35;
+  google.protobuf.Timestamp modifiedDate = 36;
+  google.protobuf.Timestamp deleteDate = 37;
+  google.protobuf.Timestamp expiryDate = 38;
+  string publicStartDate = 39;
+  string publicEndDate = 40;
+  string sortDate = 41;
+  bool isPassword = 42;
+  string location = 43;
+  repeated ConciseProfile boardFollowers = 44;
+  repeated ConciseProfile boardMembers = 45;
+  int32 totalFollowers = 46;
+  int32 totalTags = 47;
+  int32 totalMembers = 48;
+  bool isDefaultBoard = 49;
+  bool isBoardFollower = 50;
+  bool hidden = 51;
+  string role = 52;
+  repeated string likes = 53;
+  int32 totalComments = 54 [deprecated = true];
+  int32 totalLikes = 55 [deprecated = true];
+  bool isLiked = 56;
+  bool isHidden = 57;
+  bool isBoardShared = 58 [deprecated = true];
+  Thumbnails thumbs = 59;
+}
+
+message BoardMemberRoleRequest {
+    string profileID = 1;
+    string role = 2;
+}
+
+message ChangeProfileRole {
+  string profileID = 1;
+  string oldRole = 2;
+  string newRole = 3;
+}
+
+message BoardMapping {
+  google.protobuf.Timestamp boardId = 1;
+  google.protobuf.Timestamp parentId = 2;
+}
+
+message BoardFollowInfo {
+  string boardTitle = 1;
+  string boardID = 2;
+  int32 ownerID = 3;
+  string createDate = 4;
+  int32 profileID = 5;
+}
+
+
+service BoardService {
+  rpc AddBoard(AddBoardRequest) returns (GenericResponse);
+  rpc FetchBoards(FetchBoardsRequest) returns (GenericResponse);
+  rpc UpdateBoard(UpdateBoardRequest) returns (GenericResponse);
+  rpc SearchBoards(SearchBoardsRequest) returns (GenericResponse);
+  rpc FetchBoardByID(FetchBoardByIDRequest) returns (GenericResponse);
+  rpc FetchBoardDetailsByID(FetchBoardDetailsByIDRequest) returns (GenericResponse);
+  rpc DeleteBoard(DeleteBoardRequest) returns (GenericResponse);
+  rpc ListBoardInvites(ProfileIDRequest) returns (GenericResponse);
+  rpc BoardSettings(BoardSettingsRequest) returns (GenericResponse);
+  rpc BoardAuth(BoardAuthRequest) returns (GenericResponse);
+  rpc GetBoardFollowers(GetBoardFollowersRequest) returns (GenericResponse);
+  rpc GetBoardThingOwners(GetBoardThingOwnersRequest) returns (GenericResponse);
+  rpc FetchBoardThingExt(FetchBoardThingExtRequest) returns (GenericResponse);
+  rpc FetchBoardInfo(FetchBoardInfoRequest) returns (GenericResponse);
+  rpc UpdateBoardThingsTags(UpdateBoardThingsTagsRequest) returns (GenericResponse);
+  rpc GetBoardThingsTags(GetBoardThingsTagsRequest) returns (GenericResponse);
+  rpc GetBoardPermissionByProfile(GetBoardPermissionByProfileRequest) returns (GetBoardPermissionByProfileResponse);
+  rpc GetProfileTags(ProfileIDRequest) returns (GetProfileTagsResponse);
+  rpc GetBoardMembers(GetBoardMembersRequest) returns (GetBoardMembersResponse);
+
+  // **************** UNCOMMENT WHEN NEEDED ****************
+
+  // rpc GetThingLocationOnBoard(GetThingLocationOnBoardRequest) returns (GenericResponse);
+  // rpc GetSharedBoards(GetSharedBoardsRequest) returns (GenericResponse);
+  // rpc DeleteFromBoardThingsTags(DeleteFromBoardThingsTagsRequest) returns (GenericResponse);
+  // rpc InviteMembers(InviteMembersRequest) returns (GenericResponse);
+  // rpc InviteMembers(InviteMembersRequest) returns (GenericResponse);
+  // rpc FetchSubBoards(FetchSubBoardsRequest) returns (GenericResponse);
+  // rpc FetchFollowedBoards(FetchFollowedBoardsRequest) returns (GenericResponse);
+  // rpc FetchBoardsAndPostByState(FetchBoardsAndPostByStateRequest) returns (GenericResponse);
+  // rpc FetchConnectionsMembers(FetchConnectionsMembersRequest) returns (GenericResponse);
+  // rpc FetchSubBoardsOfProfile(FetchSubBoardsOfProfileRequest) returns (GenericResponse);
+  // rpc FetchSubBoardsByProfile(FetchSubBoardsByProfileRequest) returns (GenericResponse);
+  // rpc FetchSubBoardsOfBoard(FetchSubBoardsOfBoardRequest) returns (GenericResponse);
+  // rpc AddViewerInBoardByID(AddViewerInBoardByIDRequest) returns (GenericResponse);
+  // rpc FindBoardMappings(FindBoardMappingsRequest) returns (GenericResponse);
+  // rpc AddBoardMapping(AddBoardMappingRequest) returns (GenericResponse);
+  // rpc GetParentBoards(GetParentBoardsRequest) returns (GenericResponse);
+  // rpc BoardUnfollow(BoardUnfollowRequest) returns (GenericResponse);
+  // rpc BoardFollow(BoardFollowRequest) returns (GenericResponse);
+  // rpc HandleBoardInvitation(HandleBoardInvitationRequest) returns (GenericResponse);
+  // rpc ChangeProfileRole(ChangeProfileRoleRequest) returns (GenericResponse);
+  // rpc BlockMembers(BlockMembersRequest) returns (GenericResponse);
+  // rpc UnblockMembers(UnblockMembersRequest) returns (GenericResponse);
+  // rpc ListBlockedMembers(ListBlockedMembersRequest) returns (GenericResponse);
+  // rpc RemoveMembers(RemoveMembersRequest) returns (GenericResponse);
+  // rpc GetBoardProfileRole(GetBoardProfileRoleRequest) returns (GetBoardProfileRoleResponse);
+}
+
+message FetchBoardsRequest {
+  int32 profileID = 1;
+  bool fetchSubBoards = 2;
+  string page = 3;
+  string limit = 4;
+}
+
+message SearchBoardsRequest {
+  int32 profileID = 1;
+  string boardName = 2;
+  bool fetchSubBoards = 3;
+  string page = 4;
+  string limit = 5;
+}
+
+// message GetBoardProfileRoleRequest {
+//   string boardID = 1;
+//   string profileID = 2;
+// }
+
+// message FetchSubBoardsRequest {
+//   string parentID = 1;
+//   int32 profileID = 2;
+//   int32 limit = 3;
+// }
+
+message AddBoardRequest {
+  Board board = 1;
+  int32 profileID = 2;
+}
+
+
+// message GetBoardProfileRoleResponse {
+//   string role = 1;
+// }
+
+// message FetchBoardsResponse {
+//   repeated KeyValue data = 1;
+// }
+
+// message FetchFollowedBoardsRequest {
+//   string search = 1;
+//   int32 profileID = 2;
+//   int32 limit = 3;
+//   int32 page = 4;
+//   string sortBy = 5;
+//   string orderBy = 6;
+// }
+
+// message FetchBoardsAndPostByStateRequest {
+//   int32 profileID = 1;
+//   string state = 2;
+//   int32 limit = 3;
+//   int32 page = 4;
+//   string sortBy = 5;
+//   string orderBy = 6;
+//   bool fetchPost = 7;
+//   string searchKeyword = 8;
+// }
+
+
+message GenericResponse {
+  google.protobuf.Any data  = 1;
+  int32 status = 2;
+  string message  =3;
+}
+
+// message AddBoardMappingRequest {
+//   BoardMapping boardMapping = 1;
+// }
+
+// message GetParentBoardsRequest {
+//   google.protobuf.Timestamp boardID = 1;
+// }
+
+// message BoardUnfollowRequest {
+//   string boardID = 1;
+//   int32 profileID = 2;
+// }
+
+// message BoardFollowRequest {
+//   BoardFollowInfo payload = 1;
+// }
+
+message GetBoardMembersRequest {
+  string boardId = 1;
+  string limit = 2;
+  string page = 3;
+  string search = 4;
+  string role = 5;
+}
+
+message GetBoardMembersResponse {
+  repeated int32 profileIDs = 1;
+  int32 status = 2;
+  string message = 3;
+}
+
+// message FetchConnectionsMembersRequest {
+//   int32 profileID = 1;
+//   string boardID = 2;
+// }
+
+// message InviteMembersRequest {
+//   string boardID = 1;
+//   int32 profileID = 2;
+//   repeated BoardMemberRoleRequest invites = 3;
+// }
+
+// message HandleBoardInvitationRequest {
+//   int32 profileID = 1;
+//   HandleBoardInvitation boardInvitation = 2;
+// }
+
+message ProfileIDRequest {
+  int32 profileID = 1;
+}
+
+// message ListBoardInvitesRequest {
+//   int32 profileID = 1;
+// }
+
+// message ChangeProfileRoleRequest {
+//   int32 profileID = 1;
+//   string boardID = 2;
+//   ChangeProfileRole cbp = 3;
+// }
+
+// message BlockMembersRequest {
+//   int32 profileID = 1;
+//   string boardID = 2;
+//   repeated BoardMemberRoleRequest blockMembers = 3;
+// }
+
+// message UnblockMembersRequest {
+  // Define your request fields here
+// }
+
+// message ListBlockedMembersRequest {
+  // Define your request fields here
+// }
+
+// message RemoveMembersRequest {
+//   int32 profileID = 1;
+//   string boardID = 2;
+//   repeated BoardMemberRoleRequest blockMembers = 3;
+// }
+
+message BoardSettingsRequest {
+  // Define your request fields here
+}
+
+message BoardAuthRequest {
+  // Define your request fields here
+}
+
+message GetBoardFollowersRequest {
+  // Define your request fields here
+}
+
+// message GetThingLocationOnBoardRequest {
+  // Define your request fields here
+// }
+
+// message GetSharedBoardsRequest {
+  // Define your request fields here
+// }
+
+message GetBoardThingOwnersRequest {
+  // Define your request fields here
+}
+
+message FetchBoardThingExtRequest {
+  // Define your request fields here
+}
+
+message FetchBoardInfoRequest {
+  // Define your request fields here
+}
+
+message UpdateBoardThingsTagsRequest {
+  int32 profileID = 1;
+  string boardID = 2;
+  string thingID = 3;
+  repeated string tags = 4;
+}
+
+message GetBoardThingsTagsRequest {
+  string boardID = 1;
+}
+
+// message DeleteFromBoardThingsTagsRequest {
+//   string boardID = 1;
+//   string thingID = 2;
+// }
+
+// message FetchSubBoardsOfProfileRequest {
+//   int32 parentID = 1;
+//   string page  = 2;
+//   string limit = 3;
+// }
+
+// message FetchSubBoardsOfBoardRequest {
+//   int32 profileID = 1;
+//   string boardID = 2;
+//   string page = 3;
+//   string limit = 4;
+// }
+
+// message FetchSubBoardsByProfileRequest {
+//   string parentID = 1;
+//   int32 profileID = 2;
+//   int32 limit = 3;
+//   bool publicOnly = 4;
+// }
+
+message FetchBoardByIDRequest {
+  string boardID = 1;
+  string role = 2;
+}
+
+message FetchBoardDetailsByIDRequest {
+  string boardID = 1;
+}
+
+// message AddViewerInBoardByIDRequest {
+//   string boardID = 1;
+//   string profileID = 2;
+// }
+
+message UpdateBoardRequest {
+  map<string, google.protobuf.Any> payload = 1;
+  string boardID  = 2;
+  int32 profileID = 3;
+  // Define your request fields here
+}
+
+message DeleteBoardRequest {
+  // Define your request fields here
+}
+
+// message FindBoardMappingsRequest {
+//   repeated Board boards = 1;
+// }
+
+message GetBoardPermissionByProfileRequest {
+  repeated Board boards = 1;
+  int32 profileID = 2;
+}
+
+message GetBoardPermissionByProfileResponse {
+}
+
+message GetProfileTagsResponse {
+  repeated string tags = 1;
+}

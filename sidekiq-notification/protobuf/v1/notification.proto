@@ -1,0 +1,52 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+package notification.v1;
+
+option go_package = "/sidekiq-notification/v1";
+
+message MarkNotificationAsReadRequest {
+  string notificationID = 1;
+  string profileID = 2;
+}
+
+message MarkAllNotificationAsReadRequest {
+  string profileID = 1;
+}
+
+message GetNotificationListRequest {
+  string profileID = 1;
+}
+
+message GetNotificationDisplayCountRequest {
+  string profileID = 1;
+}
+
+message GetNotificationDisplayCountReply {
+   int32 count = 1;
+}
+
+message GenericReply {
+  google.protobuf.Any data  = 1;
+  int32 status = 2;
+  string message = 3;
+}
+
+message NotificationHandlerRequest{
+  repeated int32 receiverIDs = 1;
+  int32 senderID = 2;
+  string thingType = 3;
+  string thingID = 4;
+  string actionType = 5;
+  string message = 6;
+}
+
+service NotificationService {
+    rpc MarkNotificationAsRead(MarkNotificationAsReadRequest) returns (GenericReply) {}
+    rpc MarkAllNotificationAsRead(MarkAllNotificationAsReadRequest) returns (GenericReply) {}
+    rpc GetNotificationList(GetNotificationListRequest) returns (GenericReply) {}
+    rpc GetNotificationDisplayCount(GetNotificationDisplayCountRequest) returns (GetNotificationDisplayCountReply) {}
+    rpc NotificationHandler(NotificationHandlerRequest) returns (GenericReply) {}
+}
+
+
