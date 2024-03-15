@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	// search "github.com/ProImaging/sidekiq-backend/sidekiq-search/proto/search"
-	searchrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
+	// search "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/proto/search"
+	searchrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 )
 
 type SearchGrpcServer struct {

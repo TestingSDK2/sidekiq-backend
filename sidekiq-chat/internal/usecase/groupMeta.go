@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/domain"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/domain"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

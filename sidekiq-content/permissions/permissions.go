@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/pkg/errors"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

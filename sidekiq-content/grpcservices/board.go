@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	contentrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
 
-	// contentrpc "github.com/ProImaging/sidekiq-backend/sidekiq-content/proto/content"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
+	// contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/proto/content"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
 )
 
 type ContentGrpcServer struct {

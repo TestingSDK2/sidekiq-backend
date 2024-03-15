@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	searchrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	searchrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
 	"github.com/pkg/errors"
 	// v1 "github.com/sidekiq-search/proto/search"
 )

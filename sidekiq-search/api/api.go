@@ -7,10 +7,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/api/dashboard"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/api/dashboard"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/cache"
 )
 
 // API sidekiq api

@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
-	authProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
+	authProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
 )
 
 func validateUser(config *common.Config, ctx *app.Context, r *http.Request, app *app.App, IsProfileValidate bool) model.AuthResponse {

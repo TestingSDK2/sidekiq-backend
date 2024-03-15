@@ -1,16 +1,16 @@
 package search
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-search/app/board"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app/config"
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-search/app/profile"
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-search/app/storage"
-	contentrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/database"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-search/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/board"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/config"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/profile"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/storage"
+	contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/database"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/mongodatabase"
 )
 
 type Service interface {

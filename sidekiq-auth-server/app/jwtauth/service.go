@@ -3,11 +3,11 @@ package jwtauth
 import (
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/database"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/database"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 	"github.com/dgrijalva/jwt-go"
 )

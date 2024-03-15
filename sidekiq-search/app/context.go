@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/sirupsen/logrus"
 )
 

@@ -1,8 +1,8 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-search
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-search
 
 go 1.21.4
 
-// replace github.com/ProImaging/sidekiq-backend/sidekiq-search/proto/search => /home/bacancy/Documents/work/sidekiq/sidekiq-microservices/sidekiq-proto/sidekiq-search/v1
+// replace github.com/TestingSDK2/sidekiq-backend/sidekiq-search/proto/search => /home/bacancy/Documents/work/sidekiq/sidekiq-microservices/sidekiq-proto/sidekiq-search/v1
 
 require (
 	github.com/SherClockHolmes/webpush-go v1.1.2
@@ -18,7 +18,7 @@ require (
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/lithammer/fuzzysearch v1.1.5
 	github.com/pkg/errors v0.9.1
-	// github.com/ProImaging/sidekiq-backend/sidekiq-search/proto/search v0.0.0-00010101000000-000000000000
+	// github.com/TestingSDK2/sidekiq-backend/sidekiq-search/proto/search v0.0.0-00010101000000-000000000000
 	github.com/sideshow/apns2 v0.20.0
 	github.com/sirupsen/logrus v1.5.0
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e

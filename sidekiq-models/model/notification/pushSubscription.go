@@ -1,7 +1,7 @@
 package notification
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 	"github.com/SherClockHolmes/webpush-go"
 )

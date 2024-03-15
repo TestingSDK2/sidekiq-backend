@@ -1,15 +1,15 @@
 package profile
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/email"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/database"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-content/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/email"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 )
 
 // Service - defines Profile service

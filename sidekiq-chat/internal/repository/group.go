@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/domain"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/domain"
 	"github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

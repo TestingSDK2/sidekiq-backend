@@ -4,20 +4,20 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app/email"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/email"
 
-	authrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
-	contentrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	authrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app/search"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/search"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/database"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-search/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/thingsqs"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/database"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/thingsqs"
 )
 
 // App our application

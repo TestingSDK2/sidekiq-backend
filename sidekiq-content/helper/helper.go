@@ -1,8 +1,8 @@
 package helper
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/sirupsen/logrus"
 )
 

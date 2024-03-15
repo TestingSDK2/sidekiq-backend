@@ -3,13 +3,13 @@ package api
 import (
 	"net/http"
 
-	accountApipk "github.com/ProImaging/sidekiq-backend/sidekiq-people/api/accountapi"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/api/common"
-	profileApipk "github.com/ProImaging/sidekiq-backend/sidekiq-people/api/profileapi"
+	accountApipk "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/api/accountapi"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/api/common"
+	profileApipk "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/api/profileapi"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/cache"
 
 	"github.com/gorilla/mux"
 )

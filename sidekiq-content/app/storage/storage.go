@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model/notification"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

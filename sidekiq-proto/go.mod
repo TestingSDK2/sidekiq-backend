@@ -1,4 +1,4 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-proto
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-proto
 
 go 1.22
 

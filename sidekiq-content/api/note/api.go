@@ -1,19 +1,19 @@
 package note
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/board"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/note"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/board"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/note"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
 
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-content/app/notification"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/post"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/profile"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/recent"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/thing"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/thingactivity"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/cache"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/post"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/profile"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/recent"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/thing"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/thingactivity"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
 )
 
 type api struct {

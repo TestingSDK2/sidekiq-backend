@@ -7,15 +7,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/util"
-	accountProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/util"
+	accountProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	"github.com/sirupsen/logrus"
 
-	realtimeProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-realtime/v1"
+	realtimeProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-realtime/v1"
 
 	"github.com/pkg/errors"
 	"go.mongodb.org/mongo-driver/bson"

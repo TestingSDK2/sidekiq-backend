@@ -1,11 +1,11 @@
 package thingactivity
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/thingsqs"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/thingsqs"
 )
 
 type Service interface {

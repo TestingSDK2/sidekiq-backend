@@ -1,4 +1,4 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-chat
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-chat
 
 go 1.22
 

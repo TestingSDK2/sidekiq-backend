@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/app"
-	authProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
-	acProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app"
+	authProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	acProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	"github.com/golang-jwt/jwt"
 
 	"github.com/sirupsen/logrus"

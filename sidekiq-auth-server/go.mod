@@ -1,4 +1,4 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-auth-server
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server
 
 go 1.22
 

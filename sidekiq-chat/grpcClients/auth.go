@@ -3,7 +3,7 @@ package grpcclients
 import (
 	"time"
 
-	authGrpcClient "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	authGrpcClient "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"

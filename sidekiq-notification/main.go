@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/cmd"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/cmd"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/util"
 )
 
 func main() {

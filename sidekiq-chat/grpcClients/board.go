@@ -3,7 +3,7 @@ package grpcclients
 import (
 	"time"
 
-	boardGrpcClient "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	boardGrpcClient "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"

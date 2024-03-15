@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/domain"
-	boardGrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/domain"
+	boardGrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

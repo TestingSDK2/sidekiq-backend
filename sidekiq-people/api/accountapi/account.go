@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/helper"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/util"
-	authProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/helper"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/util"
+	authProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
 
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

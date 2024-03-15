@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/api"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/searchgrpc"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/api"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/searchgrpc"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
@@ -22,8 +22,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	grpcConf "github.com/ProImaging/sidekiq-backend/sidekiq-content/grpcservices/common"
-	searchGrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
+	grpcConf "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/grpcservices/common"
+	searchGrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
 )
 
 var conf *grpcConf.GrpcConfig

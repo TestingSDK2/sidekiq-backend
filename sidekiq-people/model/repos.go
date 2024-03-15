@@ -1,13 +1,13 @@
 package model
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/mongodatabase"
-	authProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
-	contentProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
-	notiProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/mongodatabase"
+	authProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	contentProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	notiProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
 )
 
 // Repos container to hold handles for cache / db repos

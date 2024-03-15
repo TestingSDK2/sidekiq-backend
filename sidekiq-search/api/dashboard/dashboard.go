@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 	"github.com/pkg/errors"
 )
 

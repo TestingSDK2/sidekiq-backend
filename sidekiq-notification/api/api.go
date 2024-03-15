@@ -1,11 +1,11 @@
 package api
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/api/common"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/app"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/cache"
 
 	"github.com/gorilla/mux"
 )

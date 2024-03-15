@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
 
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"

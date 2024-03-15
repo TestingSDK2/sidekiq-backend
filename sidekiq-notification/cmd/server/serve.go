@@ -12,13 +12,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/grpcservice"
-	grpcConfig "github.com/ProImaging/sidekiq-backend/sidekiq-notification/grpcservice/common"
-	notificationProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/grpcservice"
+	grpcConfig "github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/grpcservice/common"
+	notificationProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
 	"github.com/gin-gonic/gin"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/util"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"

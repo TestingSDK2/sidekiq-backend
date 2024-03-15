@@ -1,4 +1,4 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-notification
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-notification
 
 go 1.22
 

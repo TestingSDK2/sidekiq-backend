@@ -7,14 +7,14 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/email"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/helper"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/email"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/helper"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/util"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/storage"
 
 	"github.com/google/uuid"
 	"github.com/pkg/errors"

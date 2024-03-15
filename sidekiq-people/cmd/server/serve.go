@@ -13,12 +13,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/api"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/grpcservice"
-	grpcConf "github.com/ProImaging/sidekiq-backend/sidekiq-people/grpcservice/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/util"
-	acProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/api"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/grpcservice"
+	grpcConf "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/grpcservice/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/util"
+	acProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	"github.com/gin-gonic/gin"
 
 	"github.com/gorilla/handlers"

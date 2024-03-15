@@ -3,17 +3,17 @@ package thing
 import (
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/post"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/profile"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/database"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-content/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/post"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/profile"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 	// peoplerpc "github.com/sidekiq-people/proto/people"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 )
 
 type Service interface {

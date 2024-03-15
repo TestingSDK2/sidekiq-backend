@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 	"github.com/pkg/errors"
 
 	"go.mongodb.org/mongo-driver/bson"

@@ -6,7 +6,7 @@ import (
 	"strconv"
 
 	// peoplerpc "github.com/sidekiq-people/proto/people"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 
 	"github.com/pkg/errors"
 )

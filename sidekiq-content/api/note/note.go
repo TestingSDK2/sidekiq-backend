@@ -9,16 +9,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/pkg/errors"
 
 	// peoplerpc "github.com/sidekiq-people/proto/people"
 	// searchrpc "github.com/sidekiq-search/proto/search"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
-	searchrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	searchrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

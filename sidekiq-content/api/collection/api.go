@@ -11,13 +11,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 	// peoplerpc "github.com/sidekiq-people/proto/people"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

@@ -1,9 +1,9 @@
 package account
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/database"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 )
 
 func getContacts(db *database.Database, userID int) ([]*model.Contact, error) {

@@ -1,16 +1,16 @@
 package profile
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/email"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/helper"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-people/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/email"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/helper"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/util"
 )
 
 // Service - defines Profile service

@@ -1,4 +1,4 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-content
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-content
 
 go 1.22
 
@@ -30,7 +30,7 @@ require (
 )
 
 require (
-	github.com/ProImaging/sidekiq-backend/sidekiq-proto v0.0.0-20240313111224-ff9a691a1c60 // indirect
+	github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240313111224-ff9a691a1c60 // indirect
 	github.com/fsnotify/fsnotify v1.4.7 // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect

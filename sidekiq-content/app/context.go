@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/profile"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/user"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/profile"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/user"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/sirupsen/logrus"
 )
 

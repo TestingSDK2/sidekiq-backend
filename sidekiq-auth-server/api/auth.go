@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/util"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	acProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	acProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 )
 
 func (a *API) AuthUser(ctx *app.Context, w http.ResponseWriter, r *http.Request) error {

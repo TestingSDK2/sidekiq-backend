@@ -1,18 +1,18 @@
 package file
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/board"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/profile"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/board"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/profile"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/cache"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/database"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-content/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 
 	// peoplerpc "github.com/sidekiq-people/proto/people"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 )
 
 // Service - defines File service

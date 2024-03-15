@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/domain"
-	realtimeV1 "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-realtime/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/domain"
+	realtimeV1 "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-realtime/v1"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

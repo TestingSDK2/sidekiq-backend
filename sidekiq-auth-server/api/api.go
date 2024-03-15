@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/api/common"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/cache"
 
 	"github.com/gorilla/mux"
 )

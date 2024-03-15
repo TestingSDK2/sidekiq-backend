@@ -1,26 +1,26 @@
 package app
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/profile"
-	appStorage "github.com/ProImaging/sidekiq-backend/sidekiq-people/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/profile"
+	appStorage "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/storage"
 	"google.golang.org/grpc"
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/account"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/account"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/config"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/cache"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/database"
 
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-people/model"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/model"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/mongodatabase"
-	authProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
-	notiProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/mongodatabase"
+	authProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
+	notiProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
 )
 
 // App our application

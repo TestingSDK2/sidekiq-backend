@@ -1,10 +1,10 @@
 package activity
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/config"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-content/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/config"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 )
 
 type Service interface {

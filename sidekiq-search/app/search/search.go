@@ -9,16 +9,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/pkg/errors"
 
-	contentrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

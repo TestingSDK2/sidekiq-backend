@@ -10,12 +10,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/util"
-	contentProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
-	notiProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/util"
+	contentProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
+	notiProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
 	"github.com/pkg/errors"
 )
 

@@ -3,7 +3,7 @@ package common
 import (
 	"net/http"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
 )
 
 // HandlerFuncWithCTX - type is an adapter to use handlerfunc with ctx

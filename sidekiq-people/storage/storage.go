@@ -3,7 +3,7 @@ package storage
 import (
 	"errors"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 	"github.com/spf13/viper"
 )

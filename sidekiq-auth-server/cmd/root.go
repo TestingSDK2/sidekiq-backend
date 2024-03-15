@@ -3,7 +3,7 @@ package cmd
 import (
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cmd/server"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/cmd/server"
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

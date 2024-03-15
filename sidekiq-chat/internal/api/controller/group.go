@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/api/response"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/domain"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/api/response"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/domain"
 	"github.com/gofiber/fiber/v2"
 	"github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/bson/primitive"

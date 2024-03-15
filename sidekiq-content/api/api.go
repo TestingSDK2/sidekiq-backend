@@ -7,19 +7,19 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/board"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/collection"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/dashboard"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/file"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/note"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/post"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/task"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/thing"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/thingactivity"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/board"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/collection"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/dashboard"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/file"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/note"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/post"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/task"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/thing"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/thingactivity"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
 )
 
 // API sidekiq api

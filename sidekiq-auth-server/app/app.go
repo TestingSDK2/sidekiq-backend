@@ -3,15 +3,15 @@ package app
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/app/jwtauth"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app/jwtauth"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/cache"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/database"
 
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/mongodatabase"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/mongodatabase"
 )
 
 // App our application

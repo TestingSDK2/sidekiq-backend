@@ -1,6 +1,6 @@
 package email
 
-import "github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+import "github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 type Service interface {
 	SendEmail(email model.Email) error

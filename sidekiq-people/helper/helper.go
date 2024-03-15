@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app/storage"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/database"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app/storage"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/util"
 
 	"github.com/pkg/errors"
 )

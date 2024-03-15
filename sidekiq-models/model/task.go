@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

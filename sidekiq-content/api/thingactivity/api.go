@@ -1,9 +1,9 @@
 package thingactivity
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/api/common"
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-content/app/notification"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/thingactivity"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/common"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/thingactivity"
 )
 
 type api struct {

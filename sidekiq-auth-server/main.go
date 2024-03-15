@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cmd"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/cmd"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/util"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package activity
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/mongodatabase"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 )
 
 func logThingActivity(db *mongodatabase.DBConfig, activity model.ThingActivity) error {

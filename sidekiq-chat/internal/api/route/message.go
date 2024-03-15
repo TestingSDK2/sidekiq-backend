@@ -1,8 +1,8 @@
 package route
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/api/controller"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-chat/internal/domain"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/api/controller"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-chat/internal/domain"
 	"github.com/gofiber/fiber/v2"
 )
 

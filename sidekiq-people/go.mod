@@ -1,4 +1,4 @@
-module github.com/ProImaging/sidekiq-backend/sidekiq-people
+module github.com/TestingSDK2/sidekiq-backend/sidekiq-people
 
 go 1.22
 

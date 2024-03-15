@@ -1,10 +1,10 @@
 package accountapi
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/api/common"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-people/cache"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-people/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-people/cache"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-people/model"
 )
 
 // API sidekiq api

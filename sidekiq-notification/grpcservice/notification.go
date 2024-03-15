@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/app"
-	notificationProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/app"
+	notificationProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
 	"github.com/golang/protobuf/ptypes/any"
 	"github.com/sirupsen/logrus"
 )

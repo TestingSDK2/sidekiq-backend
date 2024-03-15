@@ -1,14 +1,14 @@
 package dashboard
 
 import (
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/api/common"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/api/common"
 
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-search/app/notification"
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-search/app/profile"
-	// "github.com/ProImaging/sidekiq-backend/sidekiq-search/app/recent"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/app/search"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-search/cache"
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-search/model"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/notification"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/profile"
+	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/recent"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/search"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/cache"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/model"
 )
 
 type api struct {

@@ -4,19 +4,19 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/app/config"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/app/notification"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/app/config"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/app/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/model"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/cache"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/cache"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/database"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/database"
 
-	repo "github.com/ProImaging/sidekiq-backend/sidekiq-notification/model"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-notification/mongodatabase"
-	accountProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-notification/mongodatabase"
+	accountProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 
-	realtimeProtobuf "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-realtime/v1"
+	realtimeProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-realtime/v1"
 )
 
 // App our application

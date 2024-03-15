@@ -12,19 +12,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/app/thing"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/consts"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/helper"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-models/model"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/thing"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/consts"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/helper"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/pkg/errors"
 
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/permissions"
-	"github.com/ProImaging/sidekiq-backend/sidekiq-content/util"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/permissions"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
 
-	notfrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
-	peoplerpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
-	searchrpc "github.com/ProImaging/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
+	notfrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
+	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
+	searchrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
