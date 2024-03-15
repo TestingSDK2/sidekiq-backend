@@ -1,0 +1,75 @@
+app:
+  secretKey: "10ZIob2rZIEfUeSLNvvh1chaU95KX6cN"
+  jwtKey: "s226vedarPR9S0zPG3Hk7WPhFOOQxqAL"
+  vapidPublicKey: BB3lBagVWtsZXrfjaR9n5Gf3yNiUO4ryah2xee_qpQ59JNJb9iQtMId5x4YUcKFZsvQWhzdMM4TQmZ45GVUd-os
+  vapidPrivateKey: SMRWvZaGboe_DLxeG6KU2DUkbbqfeAYqKQkNJy14YTA
+  # vapidPublicKey: <PublicKey>
+  # vapidPrivateKey: <PrivateKey>
+api:
+  port: "8081"
+  proxyCount: 0
+  maxContentSize: 500
+  readTimeout: 500
+  writeTimeout: 500
+  closeTimeout: 500
+  authCookieName: "rs-sidkiq-auth-token"
+  preLoginAuthName: "signupAuth"
+  tokenExpiration: 18
+database:
+  master:
+    type: "mysql"
+    # host: "172.17.0.2"
+    # port: "3306"
+    # dbName: "RockstarSystems"
+    # userName: "root"
+    # password: "rockstar"
+    host: "sidekiq-dev-mysql.c78bbkvn6vqf.us-east-1.rds.amazonaws.com"
+    port: "3306"
+    dbName: "sidekiq-dev"
+    userName: "dev_mysql_user"
+    password: "PyRH4!jzoLZL"
+    maxLifetime: 500
+    maxOpenConns: 4
+    maxIdleConns: 50
+  replica:
+    type: "mysql"
+    host: "sidekiq-dev-mysql.c78bbkvn6vqf.us-east-1.rds.amazonaws.com"
+    port: "3306"
+    dbName: "sidekiq-dev"
+    userName: "dev_mysql_user"
+    password: "PyRH4!jzoLZL"
+    maxOpenConns: 10
+    maxIdleConns: 2
+mongodatabase:
+  host: "mongodb+srv://sidekiq:j1z4PGLGdOD61QEm@sidekiq.kiqyf.mongodb.net/test?authSource=admin&replicaSet=atlas-i57g2e-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
+  DBName: "sidekiq-dev"
+cache:
+  type: "redis"
+  # host: "172.17.0.3"
+  host: "127.0.0.1"
+  port: "6379"
+  password: ""
+fileStorage:
+  type: "wasabi"
+  path: "sidekiq"
+  region: "us-east-2"
+  # accessKeyID: <KEY>
+  # secretAccessKey: <SECRET>
+  accessKeyID: "5SLNGPV72VKYB8AMMCTF"
+  secretAccessKey: "E8RTAtzO4ewbZpDcwrAchoBlVBJAd0ZJvAOTO1PN"
+tmpfileStorage:
+  type: "local"
+  path: "/tmp"
+grpc:
+  authentication:
+    host: "localhost"
+    port: "8084"
+  people:
+    host: "localhost"
+    port: "8083" 
+  notification:
+    host: "localhost"
+    port: "8086" 
+  content:
+    host: "localhost"
+    port: "8087" 

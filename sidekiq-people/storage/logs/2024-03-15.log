@@ -1,0 +1,21 @@
+{
+  "file": "/home/admin1/Bacancy Projects/Sidekiq/2024/sidekiq-backend/sidekiq-people/cmd/server/serve.go:223",
+  "func": "github.com/ProImaging/sidekiq-backend/sidekiq-people/cmd/server.serveGrpc",
+  "level": "info",
+  "msg": "People GRPC STARTED at http://127.0.0.1:8083",
+  "time": "2024-03-15 15:36:54"
+}
+{
+  "file": "/home/admin1/Bacancy Projects/Sidekiq/2024/sidekiq-backend/sidekiq-people/cmd/server/serve.go:197",
+  "func": "github.com/ProImaging/sidekiq-backend/sidekiq-people/cmd/server.serveAPI",
+  "level": "info",
+  "msg": "serving api at http://127.0.0.1:8081",
+  "time": "2024-03-15 15:36:54"
+}
+{
+  "file": "/home/admin1/Bacancy Projects/Sidekiq/2024/sidekiq-backend/sidekiq-people/cmd/server/serve.go:133",
+  "func": "github.com/ProImaging/sidekiq-backend/sidekiq-people/cmd/server.run.func1",
+  "level": "info",
+  "msg": "signal caught. shutting down...",
+  "time": "2024-03-15 15:37:09"
+}
