@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

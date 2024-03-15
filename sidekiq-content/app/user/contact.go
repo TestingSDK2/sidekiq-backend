@@ -2,7 +2,7 @@ package user
 
 import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 )
 
 func getContacts(db *database.Database, userID int) ([]*model.Contact, error) {

@@ -9,7 +9,7 @@ import (
 	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 )
 
 // Service - defines Profile service

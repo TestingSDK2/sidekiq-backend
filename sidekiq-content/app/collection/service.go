@@ -7,7 +7,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
 	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 
 	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	"go.mongodb.org/mongo-driver/bson/primitive"

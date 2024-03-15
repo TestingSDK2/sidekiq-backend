@@ -16,7 +16,7 @@ import (
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/notification"
 	"github.com/pkg/errors"
 	"go.mozilla.org/pkcs7"
