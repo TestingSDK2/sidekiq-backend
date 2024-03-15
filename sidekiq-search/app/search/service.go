@@ -1,8 +1,9 @@
 package search
 
 import (
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+
 	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/board"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/config"
 	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/profile"
 	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app/storage"

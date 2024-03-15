@@ -6,7 +6,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/collection"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/file"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/note"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 
 	// "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/notification"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/post"

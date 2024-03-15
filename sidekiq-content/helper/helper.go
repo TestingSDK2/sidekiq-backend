@@ -2,7 +2,7 @@ package helper
 
 import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/sirupsen/logrus"
 )
 

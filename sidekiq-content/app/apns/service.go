@@ -4,8 +4,8 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/cache"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
 	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model/notification"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/notification"
 )
 
 // Service defines service for operating on Departments

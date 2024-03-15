@@ -23,7 +23,7 @@ import (
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/sirupsen/logrus"
 	"github.com/skip2/go-qrcode"
 	"go.mongodb.org/mongo-driver/bson"

@@ -13,7 +13,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/member"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/consts"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	notfrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-notification/v1"
 	peoplerpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 	searchrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"

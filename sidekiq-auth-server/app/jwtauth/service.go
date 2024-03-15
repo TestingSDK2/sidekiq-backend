@@ -7,7 +7,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/cache"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/database"
 	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/model"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 
 	"github.com/dgrijalva/jwt-go"
 )

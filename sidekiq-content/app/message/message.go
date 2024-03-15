@@ -12,7 +12,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/permissions"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/notification"
 	"github.com/pkg/errors"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

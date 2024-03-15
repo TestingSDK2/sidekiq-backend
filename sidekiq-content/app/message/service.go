@@ -11,7 +11,7 @@ import (
 	repo "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/model"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/notification"
 	"github.com/pkg/errors"
 	"github.com/sideshow/apns2"
 	"github.com/sideshow/apns2/certificate"

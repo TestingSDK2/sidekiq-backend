@@ -18,7 +18,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

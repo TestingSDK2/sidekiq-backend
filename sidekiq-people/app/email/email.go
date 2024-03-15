@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
-
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"

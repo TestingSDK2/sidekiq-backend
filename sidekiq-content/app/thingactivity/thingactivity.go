@@ -10,7 +10,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/thingsqs"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/sqs"
 	"github.com/google/uuid"

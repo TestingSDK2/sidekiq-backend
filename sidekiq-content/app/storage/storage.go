@@ -10,7 +10,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/database"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model/notification"
+	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/notification"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

@@ -1,8 +1,6 @@
 package notification
 
-import (
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
-)
+import "github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
 
 // ApplePushSubscription - a push subscriptions
 type ApplePushSubscription struct {

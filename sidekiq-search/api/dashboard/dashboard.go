@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/app"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-search/util"
 	"github.com/pkg/errors"

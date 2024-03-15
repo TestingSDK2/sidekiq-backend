@@ -7,7 +7,7 @@ import (
 	"reflect"
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-content/v1"
 
 	// contentrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-content/proto/content"

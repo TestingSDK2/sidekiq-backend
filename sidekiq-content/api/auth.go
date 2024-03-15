@@ -8,7 +8,7 @@ import (
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/api/common"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	authProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-auth-server/v1"
 )
 

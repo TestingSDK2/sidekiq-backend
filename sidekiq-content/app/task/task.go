@@ -12,7 +12,7 @@ import (
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/board"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/member"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/pkg/errors"
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app/storage"

@@ -17,7 +17,7 @@ import (
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/helper"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/mongodatabase"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	"github.com/pkg/errors"
 
 	// peoplerpc "github.com/sidekiq-people/proto/people"

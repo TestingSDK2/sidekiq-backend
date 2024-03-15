@@ -9,7 +9,7 @@ import (
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/app"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-auth-server/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	acProtobuf "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-people/v1"
 )
 

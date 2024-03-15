@@ -10,7 +10,7 @@ import (
 
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/app"
 	"github.com/TestingSDK2/sidekiq-backend/sidekiq-content/util"
-	"github.com/TestingSDK2/sidekiq-backend/sidekiq-models/model"
+	model "github.com/TestingSDK2/sidekiq-backend/sidekiq-models"
 	searchrpc "github.com/TestingSDK2/sidekiq-backend/sidekiq-proto/sidekiq-search/v1"
 	"github.com/pkg/errors"
 	// v1 "github.com/sidekiq-search/proto/search"
