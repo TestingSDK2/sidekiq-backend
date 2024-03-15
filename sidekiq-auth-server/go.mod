@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/TestingSDK2/sidekiq-backend/sidekiq-models v0.0.0-20240315135022-f3312e807efb
-	github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240315135022-f3312e807efb
+	github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240315140935-44a0f2a08a9b
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-redis/redis/v7 v7.4.1

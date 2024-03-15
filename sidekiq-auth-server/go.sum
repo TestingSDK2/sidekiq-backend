@@ -2,6 +2,8 @@ github.com/TestingSDK2/sidekiq-backend/sidekiq-models v0.0.0-20240315135022-f331
 github.com/TestingSDK2/sidekiq-backend/sidekiq-models v0.0.0-20240315135022-f3312e807efb/go.mod h1:NKXChe1YaR3WWdDhE0fzMsbgXOpravW+pYp28mn+1/I=
 github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240315135022-f3312e807efb h1:/+MWb5VjKL5cB+ghBpiIz6COIvRWOj9N3WVOOZMGkVg=
 github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240315135022-f3312e807efb/go.mod h1:kJTU6fI06t2v4RU3f+yv6d0ufvxJsRFreNv0G+pefgQ=
+github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240315140935-44a0f2a08a9b h1:AUg9T01LTHNT1Scrt9q3dINHtxzFoiL6i4TZ6qHYWgo=
+github.com/TestingSDK2/sidekiq-backend/sidekiq-proto v0.0.0-20240315140935-44a0f2a08a9b/go.mod h1:kJTU6fI06t2v4RU3f+yv6d0ufvxJsRFreNv0G+pefgQ=
 github.com/TestingSDK2/sidekiq-backend/sidekiq-search v0.0.0-20240315132753-a6fee19d8d6e h1:wZzOH3DQd+coRDLhIMBF7KL83GUtqgkFMiNqJjfdhTs=
 github.com/TestingSDK2/sidekiq-backend/sidekiq-search v0.0.0-20240315132753-a6fee19d8d6e/go.mod h1:aVXNEmP58ooVt+k+UDiBnbawqb/xpKFkQkFlYSuNc74=
 github.com/bytedance/sonic v1.5.0/go.mod h1:ED5hyg4y6t3/9Ku1R6dU/4KyJ48DZ4jPhfY1O2AihPM=
