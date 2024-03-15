@@ -1,0 +1,14 @@
+{
+  "file": "/home/admin1/Bacancy Projects/Sidekiq/2024/sidekiq-backend/sidekiq-auth-server/cmd/server/serve.go:179",
+  "func": "github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cmd/server.serveAPI",
+  "level": "info",
+  "msg": "serving api at http://127.0.0.1:8080",
+  "time": "2024-03-15 15:36:47"
+}
+{
+  "file": "/home/admin1/Bacancy Projects/Sidekiq/2024/sidekiq-backend/sidekiq-auth-server/cmd/server/serve.go:191",
+  "func": "github.com/ProImaging/sidekiq-backend/sidekiq-auth-server/cmd/server.serveGrpc",
+  "level": "fatal",
+  "msg": "listen tcp :8084: bind: address already in use",
+  "time": "2024-03-15 15:36:47"
+}
